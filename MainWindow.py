@@ -1,11 +1,4 @@
 # -*- coding: utf-8 -*-
-
-# Form implementation generated from reading ui file 'mainwindow.ui'
-#
-# Created by: PyQt5 UI code generator 5.12.2
-#
-# WARNING! All changes made in this file will be lost!
-
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
@@ -14,8 +7,9 @@ class Ui_MainWindow(object):
         # 主窗口命名
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(328, 273)
-        # 主窗口
+        # 主窗口容器初始化
         self.centralwidget = QtWidgets.QWidget(MainWindow)
+        # 主窗口容器命名为centralwidget
         self.centralwidget.setObjectName("centralwidget")
         # 佈局類
         self.formLayout = QtWidgets.QFormLayout(self.centralwidget)
@@ -53,26 +47,19 @@ class Ui_MainWindow(object):
         self.calc_laebl_button.setObjectName("calc_laebl_button")
         self.formLayout.setWidget(6, QtWidgets.QFormLayout.FieldRole, self.calc_laebl_button)
 
-        # 輸出
+        # 輸出类
         self.results_output = QtWidgets.QLabel(self.centralwidget)
+        # 预计输出内容
         self.results_output.setText("")
         self.results_output.setObjectName("results_output")
         self.formLayout.setWidget(8, QtWidgets.QFormLayout.SpanningRole, self.results_output)
         
-        
         MainWindow.setCentralWidget(self.centralwidget)
-        self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 328, 22))
-        self.menubar.setObjectName("menubar")
-        MainWindow.setMenuBar(self.menubar)
-        self.statusbar = QtWidgets.QStatusBar(MainWindow)
-        self.statusbar.setObjectName("statusbar")
-        MainWindow.setStatusBar(self.statusbar)
-
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
+        # 为小组件，布局等命名
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.label_3.setText(_translate("MainWindow", "電商評論 情感分析"))

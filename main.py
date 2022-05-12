@@ -53,9 +53,3 @@ if __name__ == "__main__":
     window.show()
     sys.exit(app.exec_())
 
-
-
-'''
-打包部署
-https://github.com/pyqt/examples/tree/_/src/08%20PyQt6%20exe
-'''
