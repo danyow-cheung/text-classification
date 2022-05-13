@@ -4,5 +4,5 @@
 构建本地应用（利用Python/pyqt、Java、C#等），展示分类结果。
 
 # 使用步骤：
-1. 需要提前运行**textcnn.ipynb**文件进行生成Word2VecModel模型
+1. 下载GitHub的zip之后，需要提前运行**textcnn.ipynb**文件进行生成Word2VecModel模型
 2. 运行使用main.py
